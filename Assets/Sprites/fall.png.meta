@@ -1,16 +1,11 @@
 fileFormatVersion: 2
-guid: 908909d239c2b6042859c04d5ad0773a
+guid: c5910994f3e8f1e48abd3aa290def95e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: skip_0
-    21300002: skip_1
-    21300004: skip_2
-    21300006: skip_3
-    21300008: skip_4
-    21300010: skip_5
-    21300012: skip_6
-    21300014: skip_7
-    21300016: skip_8
+    21300000: fall_0
+    21300002: fall_1
+    21300004: fall_2
+    21300006: fall_3
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -87,22 +82,11 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skip_0
+      name: fall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,13 +100,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 311b3322a622a6d4ea2fd4aa77a108ea
+      spriteID: 32850c1de0bacec4da2a921e75179941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skip_1
+      name: fall_1
       rect:
         serializedVersion: 2
         x: 37
@@ -136,13 +120,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 035500b0a908b684e981895215daed93
+      spriteID: aef471e999f0e5f4d9d618d349477345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skip_2
+      name: fall_2
       rect:
         serializedVersion: 2
         x: 74
@@ -156,13 +140,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43060265ac6e7ca4bb290c13538b8376
+      spriteID: 94c04c639c1245d499a1d7ac1bbab01f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skip_3
+      name: fall_3
       rect:
         serializedVersion: 2
         x: 111
@@ -176,107 +160,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5595f7b63ad987949b28a316a03120a9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skip_4
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 0
-        width: 37
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5eeada1a6021fcc4a9a4068d14e00f23
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skip_5
-      rect:
-        serializedVersion: 2
-        x: 185
-        y: 0
-        width: 37
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c363d071d2f2e944b14945203fe6a91
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skip_6
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 0
-        width: 37
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8575b71927f617b4bb648ba89a127ede
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skip_7
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 0
-        width: 37
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aa5d9ae6a79a764d8ae7f27b60ccb46
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skip_8
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 0
-        width: 290
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c69d4bbe50c879f47be020f6bf99f496
+      spriteID: f22035f13a86a8d4eaf1552c2ec06b29
       vertices: []
       indices: 
       edges: []
@@ -284,7 +168,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 17308b67da0287441a556b5d7ce04a4e
+    spriteID: 8de28f7026a7f8942845d37804d9d704
     vertices: []
     indices: 
     edges: []
