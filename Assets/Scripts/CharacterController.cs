@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour {
 
-    public float maxSpeed = 10f;
+    public float maxSpeed = 20f;
     private bool facingRight = true;
     public Rigidbody2D rb2d;
     Animator anim;
@@ -15,6 +15,8 @@ public class CharacterController : MonoBehaviour {
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     public float jumpForce = 350f;
+
+    bool doubleJump = false;
 	void Start () {
         anim = GetComponent<Animator>();
 	}
@@ -22,9 +24,16 @@ public class CharacterController : MonoBehaviour {
 	
 	void FixedUpdate ()
     {
+        if (grounded)
+            doubleJump = false;
+
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("Ground", grounded);
         anim.SetFloat("vSpeed", rb2d.velocity.y);
+
+
+        //disables movement in the air
+        //if (!grounded) return;
 
         float move = Input.GetAxis("Horizontal");
 
@@ -38,10 +47,13 @@ public class CharacterController : MonoBehaviour {
 	}
     void Update()
     {
-        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        if ((grounded || !doubleJump) && Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetBool("Ground", false);
             rb2d.AddForce(new Vector2(0, jumpForce));
+
+            if (!doubleJump && !grounded)
+                doubleJump = true;
         }
     }
     void Flip()
